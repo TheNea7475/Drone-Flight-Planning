@@ -134,7 +134,7 @@ Misure=["mm";"mm";"m";"m";"m";"m";"m";"m";"m";"s";"(intero)";"(intero)"];
 Variabili=string(fieldnames(Risultati));
 
 
-Risultati_Elaborazione=struct2array(Risultati);
+Risultati_Elaborazione=cell2mat(struct2cell(Risultati));
 
 Risultati_Elaborazione=round(Risultati_Elaborazione);
 
